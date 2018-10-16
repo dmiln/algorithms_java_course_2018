@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
 public abstract class Template {
-    FastScanner in;
+    public FastScanner in;
     PrintWriter out;
 
     public void solve() throws IOException {
@@ -28,7 +28,7 @@ public abstract class Template {
         }
     }
 
-    class FastScanner {
+    public class FastScanner {
         BufferedReader br;
         StringTokenizer st;
 
@@ -47,8 +47,12 @@ public abstract class Template {
             return st.nextToken();
         }
 
-        int nextInt() {
+        public int nextInt() {
             return Integer.parseInt(next());
+        }
+
+        public long nextLong() {
+            return Long.parseLong(next());
         }
     }
 
