@@ -24,7 +24,7 @@ public class CountingSort extends Template{
         System.out.println(stringBuilder.toString());
     }
 
-    public void countingSort(int[] a){
+    private void countingSort(int[] a){
         int max = findMax(a);
         int[] count = new int[max + 1];
         for (int x : a){
@@ -39,7 +39,7 @@ public class CountingSort extends Template{
         }
     }
 
-    public int findMax(int[] a){
+    private int findMax(int[] a){
         int max = 0;
         for (int x : a){
             max = Math.max(max,x);
